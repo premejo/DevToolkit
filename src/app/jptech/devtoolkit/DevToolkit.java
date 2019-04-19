@@ -27,11 +27,9 @@ public class DevToolkit extends JavaPlugin implements Listener {
 		saveConfig();
 
 		getServer().getPluginManager().registerEvents(this, this);
-		getServer().getPluginManager().registerEvents(new app.jptech.devtoolkit.IdWand(), this);
-		
+
 		// register commands
 		this.getCommand("smitefoe").setExecutor(new OnPlayerCMD());
-		this.getCommand("idwand").setExecutor(new OnPlayerCMD());
 		this.getCommand("soundtest").setExecutor(new OnPlayerCMD());
 		
 		 // load all sounds into allSounds

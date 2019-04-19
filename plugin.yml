@@ -8,11 +8,6 @@ commands:
     usage: /smitefoe [player]
     permission: devtoolkit.smitefoe
     aliases: [sf]
-  idwand:
-    description: Turn your mainhand item into a material identifying wand.
-    usage: /idwand (set or unset previously set item as IdWand)
-    permission: devtoolkit.idwand
-    aliases: [iw]
   soundtest:
     description: Allows playback of Minecraft sounds with loop, volume, and pitch options!
     usage: Place sign on block with "soundtest" on line 1 and sound number on line 2. Put lever on block above for looping, or button on block below.
@@ -22,5 +17,4 @@ permissions:
   devtoolkit.*:
     children:
       devtoolkit.soundtest
-      devtoolkit.idwand
       devtoolkit.smitefoe

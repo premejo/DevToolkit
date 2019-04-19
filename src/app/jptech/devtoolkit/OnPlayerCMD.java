@@ -49,20 +49,6 @@ public class OnPlayerCMD implements CommandExecutor {
 				else sender.sendMessage("You ready yourself to cast lightning on a foe, but realize you are the only one here.");
 			}
 		}
-		else if (command.getName().equalsIgnoreCase("idwand") && sender.hasPermission("devtoolkit.idwand")) {
-			if (args.length != 0) {
-				return false;
-			} else {
-				if (IdWand.playerList.get(sender.getName()) == ((Player) sender).getInventory().getItemInMainHand().getType()) {
-					IdWand.playerList.put(sender.getName(), null);
-					sender.sendMessage("IdWand material cleared.");
-				}
-				else {
-					IdWand.playerList.put(sender.getName(), ((Player) sender).getInventory().getItemInMainHand().getType());
-					sender.sendMessage("IdWand material set to: "+IdWand.playerList.get(sender.getName()));
-				}
-			}
-		}
 		else if (command.getName().equalsIgnoreCase("soundtest") && sender.hasPermission("devtoolkit.soundtest")) {
 			if (args.length != 0) return false;
 			else return false;
